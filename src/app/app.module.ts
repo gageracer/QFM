@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
@@ -9,6 +10,9 @@ import { environment } from '../environments/environment';
 import { HeaderComponent } from './header/header.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
+
+
+import { MP_ROUTES } from './mainpage/mainpage.routes';
 import { ProfileComponent } from './mainpage/profile/profile.component';
 import { MessagesComponent } from './mainpage/messages/messages.component';
 import { MaterialsComponent } from './mainpage/materials/materials.component';
@@ -24,19 +28,8 @@ import { SettingsComponent } from './mainpage/settings/settings.component';
 
 const appRoutes: Routes = [
   {path: '', redirectTo: '/welcome', pathMatch: 'full'},
-  {path: 'main-page',   component: WelcomeComponent},
-  {path: 'profile',     component: ProfileComponent},
-  {path: 'messages',    component: MessagesComponent},
-  {path: 'materials',   component: MaterialsComponent},
-  {path: 'surveys',     component: SurveysComponent},
-  {path: 'statistics',  component: StatisticsComponent},
-  {path: 'mymentor',    component: MymentorComponent},
-  {path: 'mymentees',   component: MymenteesComponent},
-  {path: 'matches',     component: MatchesComponent},
-  {path: 'faq',         component: FaqComponent},
-  {path: 'mentors',     component: MentorsComponent},
-  {path: 'mentees',     component: MenteesComponent},
-  {path: 'settings',    component: SettingsComponent}
+  {path: 'welcome',     component: WelcomeComponent},
+  {path: 'main-page',   component: MainpageComponent, children: MP_ROUTES},
 
 ];
 
@@ -48,7 +41,19 @@ const appRoutes: Routes = [
     AppComponent,
     HeaderComponent,
     WelcomeComponent,
-    MainpageComponent
+    MainpageComponent,
+    ProfileComponent,
+    MessagesComponent,
+    MaterialsComponent,
+    SurveysComponent,
+    StatisticsComponent,
+    MymentorComponent,
+    MymenteesComponent,
+    MatchesComponent,
+    FaqComponent,
+    MentorsComponent,
+    MenteesComponent,
+    SettingsComponent
 ],
   imports: [
     BrowserModule,

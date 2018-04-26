@@ -7,14 +7,20 @@ import { AppComponent } from './app.component';
 
 import { environment } from '../environments/environment';
 import { HeaderComponent } from './header/header.component';
-import { ProfileComponent } from './profile/profile.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { MainpageComponent } from './mainpage/mainpage.component';
+
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ProfileComponent
-  ],
+    WelcomeComponent,
+    MainpageComponent
+],
   imports: [
     BrowserModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })

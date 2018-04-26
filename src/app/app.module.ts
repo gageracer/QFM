@@ -10,9 +10,6 @@ import { environment } from '../environments/environment';
 import { HeaderComponent } from './header/header.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
-import { ProfileComponent } from './mainpage/profile/profile.component';
-
-
 import { MP_ROUTES } from './mainpage/mainpage.routes';
 import { ProfileComponent } from './mainpage/profile/profile.component';
 import { MessagesComponent } from './mainpage/messages/messages.component';

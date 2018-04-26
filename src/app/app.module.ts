@@ -9,6 +9,7 @@ import { environment } from '../environments/environment';
 import { HeaderComponent } from './header/header.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
+import { ProfileComponent } from './mainpage/profile/profile.component';
 
 
 
@@ -19,7 +20,8 @@ import { MainpageComponent } from './mainpage/mainpage.component';
     AppComponent,
     HeaderComponent,
     WelcomeComponent,
-    MainpageComponent
+    MainpageComponent,
+    ProfileComponent
 ],
   imports: [
     BrowserModule,

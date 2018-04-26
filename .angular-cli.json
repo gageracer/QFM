@@ -20,7 +20,7 @@
       "prefix": "app",
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "../node_modules/w3-css/4/w3/w3mobile.css",
+        "../node_modules/w3-css/4/w3mobile.css",
         "styles.css"
       ],
       "scripts": [],

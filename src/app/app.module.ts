@@ -10,7 +10,8 @@ import { HeaderComponent } from './header/header.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { ProfileComponent } from './mainpage/profile/profile.component';
-
+import { FaqComponent } from './mainpage/faq/faq.component';
+import { MessagesComponent } from './mainpage/messages/messages.component';
 
 
 
@@ -21,7 +22,9 @@ import { ProfileComponent } from './mainpage/profile/profile.component';
     HeaderComponent,
     WelcomeComponent,
     MainpageComponent,
-    ProfileComponent
+    ProfileComponent,
+    FaqComponent,
+    MessagesComponent
 ],
   imports: [
     BrowserModule,

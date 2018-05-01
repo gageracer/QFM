@@ -7,10 +7,8 @@
       <!-- Accordion -->
       <div class="w3-card w3-round">
         <div class="w3-white">
-          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-pencil fa-fw w3-margin-right"></i> Compose</button>
-          <div id="Demo1" class="w3-hide w3-container">
-            <p>Some text..</p>
-          </div>
+
+            <a href="javascript:void(0)" class="w3-button w3-block w3-theme-l1 w3-left-align" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-pencil fa-fw w3-margin-right"></i> Compose</a>
           
         </div>      
       </div>
@@ -74,4 +72,24 @@
   </div>
   
 <!-- End Page Container -->
+</div>
+
+<!-- Modal that pops up when you click on "New Message" -->
+<div id="id01" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-padding w3-red">
+       <h2>Send Mail</h2>
+    </div>
+    <div class="w3-panel">
+      <label>To</label>
+      <input class="w3-input w3-border w3-margin-bottom" type="text">
+      <label>Subject</label>
+      <input class="w3-input w3-border w3-margin-bottom" type="text">
+      <input class="w3-input w3-border w3-margin-bottom" style="height:150px" placeholder="What's on your mind?">
+      <div class="w3-section">
+        <a class="w3-button w3-red" onclick="document.getElementById('id01').style.display='none'">Cancel  <i class="fa fa-remove"></i></a>
+        <a class="w3-button w3-red w3-right" onclick="document.getElementById('id01').style.display='none'">Send  <i class="fa fa-paper-plane"></i></a> 
+      </div>    
+    </div>
+  </div>
 </div>

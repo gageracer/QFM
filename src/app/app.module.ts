@@ -12,10 +12,6 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { MP_ROUTES } from './mainpage/mainpage.routes';
 import { ProfileComponent } from './mainpage/profile/profile.component';
-<<<<<<< HEAD
-import { FaqComponent } from './mainpage/faq/faq.component';
-import { MessagesComponent } from './mainpage/messages/messages.component';
-=======
 import { MessagesComponent } from './mainpage/messages/messages.component';
 import { MaterialsComponent } from './mainpage/materials/materials.component';
 import { SurveysComponent } from './mainpage/surveys/surveys.component';
@@ -34,7 +30,6 @@ const appRoutes: Routes = [
   {path: 'main-page',   component: MainpageComponent, children: MP_ROUTES},
 
 ];
->>>>>>> 142d4212f8fe0339c9d98d48dffcf64535e0eb3e
 
 
 
@@ -46,10 +41,6 @@ const appRoutes: Routes = [
     WelcomeComponent,
     MainpageComponent,
     ProfileComponent,
-<<<<<<< HEAD
-    FaqComponent,
-    MessagesComponent
-=======
     MessagesComponent,
     MaterialsComponent,
     SurveysComponent,
@@ -61,9 +52,8 @@ const appRoutes: Routes = [
     MentorsComponent,
     MenteesComponent,
     SettingsComponent
+  ],
 
->>>>>>> 142d4212f8fe0339c9d98d48dffcf64535e0eb3e
-],
   imports: [
     BrowserModule,
     RouterModule.forRoot(

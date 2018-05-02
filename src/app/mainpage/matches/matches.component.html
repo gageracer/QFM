@@ -1,3 +1,70 @@
-<p>
-  matches works!
-</p>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    </style>
+<body>
+
+<div class="w3-container" style="margin-top: 100px">
+  <h2>Matches</h2>
+
+  <div class="w3-bar w3-white">
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'AlumniM')">Alumni Mentors&Mentees</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'SeniorM')">Senior Mentors&Mentees</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Requests')">Requests</button>        
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'AlumniUM')">Unmatched Alumni Mentors&Mentees</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'SeniorUM')">Unmatched Senior Mentors&Mentees</button>        
+  </div>
+  
+  <div id="AlumniM" class="w3-container w3-border city">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="SeniorM" class="w3-container w3-border city" style="display:none">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p> 
+  </div>
+
+  <div id="Requests" class="w3-container w3-border city" style="display:none">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <div id="AlumniUM" class="w3-container w3-border city" style="display:none">
+      <h2>Tokyo</h2>
+      <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <div id="SeniorUM" class="w3-container w3-border city" style="display:none">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+  </div>
+    
+
+</div>
+<script>
+
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+</body>
+</html>

@@ -23,7 +23,7 @@
     "@angular/router": "^5.2.0",
     "@angular/service-worker": "^5.2.0",
     "@icon/themify-icons": "^1.0.4",
-    "bootstrap": "^4.1.0",
+    "bootstrap": "^4.1.1",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
     "themify-icons": "^1.0.0",

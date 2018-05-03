@@ -12,7 +12,7 @@ import { MatchesComponent } from './matches/matches.component';
 import { FaqComponent } from './faq/faq.component';
 import { MentorsComponent } from './mentors/mentors.component';
 import { MenteesComponent } from './mentees/mentees.component';
-import { SettingsComponent } from './settings/settings.component';
+
 
 
 
@@ -30,5 +30,4 @@ export const MP_ROUTES: Routes = [
     {path: 'faq',         component: FaqComponent},
     {path: 'mentors',     component: MentorsComponent},
     {path: 'mentees',     component: MenteesComponent},
-    {path: 'settings',    component: SettingsComponent}
 ];

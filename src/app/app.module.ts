@@ -22,10 +22,12 @@ import { MatchesComponent } from './mainpage/matches/matches.component';
 import { FaqComponent } from './mainpage/faq/faq.component';
 import { MentorsComponent } from './mainpage/mentors/mentors.component';
 import { MenteesComponent } from './mainpage/mentees/mentees.component';
-import { SettingsComponent } from './mainpage/settings/settings.component';
+import { RegisterComponent } from './register/register.component';
+
 
 const appRoutes: Routes = [
   {path: 'welcome',     component: WelcomeComponent},
+  {path: 'register',    component: RegisterComponent},
   {path: 'main-page',   component: HeaderComponent, children: MP_ROUTES},
   {path: '**', component: WelcomeComponent}
 ];
@@ -49,7 +51,7 @@ export const routing = RouterModule.forRoot(appRoutes);
     FaqComponent,
     MentorsComponent,
     MenteesComponent,
-    SettingsComponent
+    RegisterComponent,
   ],
 
   imports: [

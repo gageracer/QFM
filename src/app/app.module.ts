@@ -28,10 +28,10 @@ const appRoutes: Routes = [
   {path: '', redirectTo: '/welcome', pathMatch: 'full'},
   {path: 'welcome',     component: WelcomeComponent},
   {path: 'main-page',   component: MainpageComponent, children: MP_ROUTES},
-
+  {path: '**', component: WelcomeComponent}
 ];
 
-
+export const routing = RouterModule.forRoot(appRoutes);
 
 
 @NgModule({

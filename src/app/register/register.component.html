@@ -1,3 +1,32 @@
-<p>
-  register works!
-</p>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
+</style>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+   <a class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><img src="assets/images/mentorlogo.png" style="width:70px;height:50px;"/>QUEST FOR MENTOR</a>
+   
+  </div>
+ </div>
+
+ <div class="w3-content w3-padding" style="max-width:1564px; margin-top: 100px">
+ <form class="w3-container" action="/action_page.php">
+  <div class="w3-section">
+      <label><b>Name</b></label>
+      <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Name" name="name" required>
+    <label><b>Username</b></label>
+    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+    <label><b>Password</b></label>
+    <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
+    <label><b>Re-Password</b></label>
+    <input class="w3-input w3-border" type="text" placeholder="Re-Enter Password" name="repsw" required>
+    <a [routerLink]="['/main-page']"><button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Register</button></a>
+  </div>
+</form>
+</div>

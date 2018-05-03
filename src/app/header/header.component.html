@@ -10,7 +10,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 <div class="w3-top">
   <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><img src="assets/images/mentorlogo.png" style="width:70px;height:50px;"/>QUEST FOR MENTOR</a>
+   <a [routerLink]="['/main-page']" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><img src="assets/images/mentorlogo.png" style="width:70px;height:50px;"/>QUEST FOR MENTOR</a>
    <a [routerLink]="['/main-page']" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" style="margin-left: 500px" title="Home"><i class="fa fa-th fa-2x"></i></a>
    
    <div class="w3-dropdown-hover w3-hide-small">
@@ -45,39 +45,6 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 
 
 
-<!--
-<nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-  <a class="navbar-brand" href="#" style="margin-right: 450px"><img src="assets/images/mentorlogo.png" style="width:70px;height:50px;"/>QUEST FOR MENTOR</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="">Home</a>
-      </li>
-      
-      <li class="nav-item">
-        <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-      <a href="#" class="w3-bar-item w3-button">One new friend request</a>
-      <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
-      <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
-    </div>
-  </div>
-      </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="#">Settings</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Logout</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
--->
 <router-outlet></router-outlet>
 

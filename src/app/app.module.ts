@@ -25,7 +25,6 @@ import { MenteesComponent } from './mainpage/mentees/mentees.component';
 import { SettingsComponent } from './mainpage/settings/settings.component';
 
 const appRoutes: Routes = [
-  {path: '', redirectTo: '/welcome', pathMatch: 'full'},
   {path: 'welcome',     component: WelcomeComponent},
   {path: 'main-page',   component: HeaderComponent, children: MP_ROUTES},
   {path: '**', component: WelcomeComponent}

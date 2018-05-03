@@ -18,7 +18,7 @@ import { SettingsComponent } from './settings/settings.component';
 
 
 export const MP_ROUTES: Routes = [
-    {path: '', redirectTo: '/main-page', pathMatch: 'full'},
+    {path: '', component: MainpageComponent},
     {path: 'profile',     component: ProfileComponent},
     {path: 'messages',    component: MessagesComponent},
     {path: 'materials',   component: MaterialsComponent},

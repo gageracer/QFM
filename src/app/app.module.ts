@@ -27,12 +27,11 @@ import { SettingsComponent } from './mainpage/settings/settings.component';
 const appRoutes: Routes = [
   {path: '', redirectTo: '/welcome', pathMatch: 'full'},
   {path: 'welcome',     component: WelcomeComponent},
-  {path: 'main-page',   component: MainpageComponent, children: MP_ROUTES},
+  {path: 'main-page',   component: HeaderComponent, children: MP_ROUTES},
   {path: '**', component: WelcomeComponent}
 ];
 
 export const routing = RouterModule.forRoot(appRoutes);
-
 
 @NgModule({
   declarations: [
@@ -56,10 +55,7 @@ export const routing = RouterModule.forRoot(appRoutes);
 
   imports: [
     BrowserModule,
-    RouterModule.forRoot(
-      appRoutes,
-      {enableTracing: true}
-    ),
+    routing,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

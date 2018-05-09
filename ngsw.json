@@ -10,9 +10,9 @@
         "https://gageracer.github.io/QFM/favicon.ico",
         "https://gageracer.github.io/QFM/index.html",
         "https://gageracer.github.io/QFM/inline.318b50c57b4eba3d437b.bundle.js",
-        "https://gageracer.github.io/QFM/main.74516753a6aaf5277fc9.bundle.js",
+        "https://gageracer.github.io/QFM/main.28aa536ef227476586a6.bundle.js",
         "https://gageracer.github.io/QFM/polyfills.b6b2cd0d4c472ac3ac12.bundle.js",
-        "https://gageracer.github.io/QFM/styles.744380a6b6642850fc21.bundle.css"
+        "https://gageracer.github.io/QFM/styles.5654bbd0c4b7c05ac7c5.bundle.css"
       ],
       "patterns": []
     },
@@ -32,12 +32,12 @@
   "hashTable": {
     "https://gageracer.github.io/QFM/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
     "https://gageracer.github.io/QFM/assets/images/hero6.jpg": "04215fc17f8941ffb3c4ce8eed5aaedc87762817",
-    "https://gageracer.github.io/QFM/main.74516753a6aaf5277fc9.bundle.js": "e0ca239923939b43d6fe46a9dc4a1c39b41427db",
+    "https://gageracer.github.io/QFM/main.28aa536ef227476586a6.bundle.js": "8a1edc0bcd670408b1ea1149da4d1b9747477539",
     "https://gageracer.github.io/QFM/assets/images/mentorlogo.png": "42acb1b6ed3e8162e5a05c2e5429103769ce461e",
     "https://gageracer.github.io/QFM/polyfills.b6b2cd0d4c472ac3ac12.bundle.js": "b092f5c27ff4222179ae3e9e3164c8cc6caa09cf",
     "https://gageracer.github.io/QFM/assets/images/suitavatar.jpg": "6433dc269fc4736f309e22be1bae5a4fcaad6476",
-    "https://gageracer.github.io/QFM/styles.744380a6b6642850fc21.bundle.css": "9db8379fad8a38e50e0493200584a2423e539d1b",
+    "https://gageracer.github.io/QFM/styles.5654bbd0c4b7c05ac7c5.bundle.css": "ec2bf5b6529d8a6777d081b2bac7c0d3f9dc411d",
     "https://gageracer.github.io/QFM/favicon.ico": "42acb1b6ed3e8162e5a05c2e5429103769ce461e",
-    "https://gageracer.github.io/QFM/index.html": "87602707ab556d3751dd715fed49bf3f00e69a8b"
+    "https://gageracer.github.io/QFM/index.html": "46011151d12e19634fc51eb0b85b5d89831cdc8f"
   }
 }

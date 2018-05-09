@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
@@ -57,6 +58,7 @@ export const routing = RouterModule.forRoot(appRoutes);
   imports: [
     BrowserModule,
     routing,
+    NgbModule.forRoot(),
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

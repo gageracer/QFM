@@ -59,7 +59,7 @@ export const routing = RouterModule.forRoot(appRoutes);
     BrowserModule,
     routing,
     NgbModule.forRoot(),
-    environment.production ? ServiceWorkerModule.register('/ngsw.workerj.s') : [],
+    environment.production ? ServiceWorkerModule.register('/ngsw.worker.js') : [],
   ],
   providers: [],
   bootstrap: [AppComponent]

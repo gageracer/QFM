@@ -10,9 +10,9 @@
         "https://gageracer.github.io/QFM/favicon.ico",
         "https://gageracer.github.io/QFM/index.html",
         "https://gageracer.github.io/QFM/inline.318b50c57b4eba3d437b.bundle.js",
-        "https://gageracer.github.io/QFM/main.cd0990cd33d4e182551e.bundle.js",
+        "https://gageracer.github.io/QFM/main.ea363107d980ec4e3811.bundle.js",
         "https://gageracer.github.io/QFM/polyfills.b6b2cd0d4c472ac3ac12.bundle.js",
-        "https://gageracer.github.io/QFM/styles.7270a527a9be69c51c61.bundle.css"
+        "https://gageracer.github.io/QFM/styles.5654bbd0c4b7c05ac7c5.bundle.css"
       ],
       "patterns": []
     },
@@ -51,15 +51,15 @@
   "hashTable": {
     "https://gageracer.github.io/QFM/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
     "https://gageracer.github.io/QFM/assets/images/hero6.jpg": "04215fc17f8941ffb3c4ce8eed5aaedc87762817",
-    "https://gageracer.github.io/QFM/main.cd0990cd33d4e182551e.bundle.js": "5e3d104c44bc96a22c9370be8d68508013b96d3a",
+    "https://gageracer.github.io/QFM/main.ea363107d980ec4e3811.bundle.js": "107ffe963b31fc6d25829ceaab11f29bc87e9d1c",
     "https://gageracer.github.io/QFM/assets/images/mentorlogo.png": "42acb1b6ed3e8162e5a05c2e5429103769ce461e",
     "https://gageracer.github.io/QFM/polyfills.b6b2cd0d4c472ac3ac12.bundle.js": "b092f5c27ff4222179ae3e9e3164c8cc6caa09cf",
     "https://gageracer.github.io/QFM/assets/images/suitavatar.jpg": "6433dc269fc4736f309e22be1bae5a4fcaad6476",
-    "https://gageracer.github.io/QFM/styles.7270a527a9be69c51c61.bundle.css": "ec2bf5b6529d8a6777d081b2bac7c0d3f9dc411d",
+    "https://gageracer.github.io/QFM/styles.5654bbd0c4b7c05ac7c5.bundle.css": "ec2bf5b6529d8a6777d081b2bac7c0d3f9dc411d",
     "https://gageracer.github.io/QFM/assets/images/icons/favicon_zpi_icon.ico": "e356a2047ea9975fbcf0da2bf6da2683431f1a12",
     "https://gageracer.github.io/QFM/favicon.ico": "42acb1b6ed3e8162e5a05c2e5429103769ce461e",
     "https://gageracer.github.io/QFM/assets/images/icons/iconL.ico": "5451bedba69e1f30b847a80457fcd3fb9145dad0",
-    "https://gageracer.github.io/QFM/index.html": "9ef4a45201a374dcb211e62efe360ab35d766955",
+    "https://gageracer.github.io/QFM/index.html": "d7b447bf5fdf1aa0076847b9d50f6821983ade95",
     "https://gageracer.github.io/QFM/assets/images/icons/iconM.ico": "5451bedba69e1f30b847a80457fcd3fb9145dad0",
     "https://gageracer.github.io/QFM/assets/images/icons/iconS.ico": "5451bedba69e1f30b847a80457fcd3fb9145dad0",
     "https://gageracer.github.io/QFM/assets/images/icons/iconXL.ico": "5451bedba69e1f30b847a80457fcd3fb9145dad0",

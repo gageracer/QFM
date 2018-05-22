@@ -10,28 +10,49 @@
     
       <table class="w3-table w3-striped w3-white">
         <tr>
-          <a href="javascript:void(0)" class="w3-button w3-block w3-left-align" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Compose</a>
+          <a href="javascript:void(0)" class="w3-button w3-block w3-left-align" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Mentee1</a>
           
         </tr>
         <tr>
-            <a href="javascript:void(0)" class="w3-button w3-block w3-left-align" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Compose</a>
+            <a href="javascript:void(0)" class="w3-button w3-block w3-left-align" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Mentee2</a>
           
         </tr>
         <tr>
-            <a href="javascript:void(0)" class="w3-button w3-block w3-left-align" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Compose</a>
+            <a href="javascript:void(0)" class="w3-button w3-block w3-left-align" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Mentee3</a>
           
         </tr>
         <tr>
-            <a href="javascript:void(0)" class="w3-button w3-block w3-left-align" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Compose</a>
+            <a href="javascript:void(0)" class="w3-button w3-block w3-left-align" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Mentee4</a>
           
         </tr>
         <tr>
-          <a href="javascript:void(0)" class="w3-button w3-block w3-left-align" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Compose</a>
+          <a href="javascript:void(0)" class="w3-button w3-block w3-left-align" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Mentee5</a>
           
         </tr>
       </table>
     </div>
   </div>
+
+
+  <div id="id02" class="w3-modal" style="z-index:4">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-padding w3-red">
+         <h2>Send Mail</h2>
+      </div>
+      <div class="w3-panel">
+        <label>To</label>
+        <input class="w3-input w3-border w3-margin-bottom" type="text">
+        <label>Subject</label>
+        <input class="w3-input w3-border w3-margin-bottom" type="text">
+        <input class="w3-input w3-border w3-margin-bottom" style="height:150px" placeholder="What's on your mind?">
+        <div class="w3-section">
+          <a class="w3-button w3-red" onclick="document.getElementById('id02').style.display='none'">Cancel  <i class="fa fa-remove"></i></a>
+          <a class="w3-button w3-red w3-right" onclick="document.getElementById('id02').style.display='none'">Send  <i class="fa fa-paper-plane"></i></a> 
+        </div>    
+      </div>
+    </div>
+  </div>
+
 
 
   <div id="id01" class="w3-modal" style="z-index:2">
@@ -166,7 +187,7 @@
         </div>
         <div class="w3-section">
             
-          <a class="w3-button w3-red" onclick="document.getElementById('id01').style.display='none'">Send Message   <i class="fa fa-paper-plane"></i></a>
+          <a class="w3-button w3-red" onclick="document.getElementById('id02').style.display='block'">Send Message   <i class="fa fa-paper-plane"></i></a>
         </div>
         <div class="w3-section">
           <a class="w3-button w3-red" onclick="document.getElementById('id01').style.display='none'">Back   <i class="fa fa-remove"></i></a> 

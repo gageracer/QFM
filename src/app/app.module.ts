@@ -27,10 +27,10 @@ import { RegisterComponent } from './register/register.component';
 
 
 const appRoutes: Routes = [
-  {path: 'welcome',     component: WelcomeComponent},
+  {path: '',     component: WelcomeComponent},
   {path: 'register',    component: RegisterComponent},
   {path: 'main-page',   component: HeaderComponent, children: MP_ROUTES},
-  {path: '**', component: WelcomeComponent}
+  {path: '**', redirectTo: ''}
 ];
 
 export const routing = RouterModule.forRoot(appRoutes);

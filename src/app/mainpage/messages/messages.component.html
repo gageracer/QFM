@@ -18,14 +18,10 @@
       <!-- Accordion -->
       <div class="w3-card w3-round">
         <div class="w3-white">
-          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-inbox fa-fw w3-margin-right"></i> Inbox</button>
-          <div id="Demo1" class="w3-hide w3-container">
-            <p>Some text..</p>
-          </div>
-          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-paper-plane fa-fw w3-margin-right"></i> Sent Mail</button>
-          <div id="Demo2" class="w3-hide w3-container">
-            <p>Some other text..</p>
-          </div>
+            <a href="javascript:void(0)" class="w3-button w3-block w3-theme-l1 w3-left-align" onclick="document.getElementById('id02').style.display='block'; document.getElementById('id03').style.display='none'"><i class="fa fa-inbox fa-fw w3-margin-right"></i> Inbox</a>
+          
+          <a href="javascript:void(0)" class="w3-button w3-block w3-theme-l1 w3-left-align" onclick="document.getElementById('id03').style.display='block'; document.getElementById('id02').style.display='none'"><i class="fa fa-paper-plane fa-fw w3-margin-right"></i> Sent Messages</a>
+          
           
         </div>      
       </div>
@@ -36,38 +32,68 @@
     <!-- Middle Column -->
     <div class="w3-col m9" style="margin-top: 30px">
     
-      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
-      
+      <div id="id02" class="w3-container w3-card w3-white w3-round w3-margin"><br>
+      <h1>Messages</h1>
         <table class="w3-table w3-striped w3-white">
           <tr>
             <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>New record, over 90 views.</td>
-            <td><i>10 mins</i></td>
+            <td>First Message</td>
+            <td><i>mins</i></td>
           </tr>
           <tr>
             <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>New record, over 90 views.</td>
-            <td><i>10 mins</i></td>
+            <td>Second Message</td>
+            <td><i>mins</i></td>
           </tr>
           <tr>
             <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>New record, over 90 views.</td>
-            <td><i>10 mins</i></td>
+            <td>Third Message</td>
+            <td><i>mins</i></td>
           </tr>
           <tr>
             <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>New record, over 90 views.</td>
-            <td><i>10 mins</i></td>
+            <td>Forth Message</td>
+            <td><i>mins</i></td>
           </tr>
           <tr>
             <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>New record, over 90 views.</td>
-            <td><i>10 mins</i></td>
+            <td>Fifth Message</td>
+            <td><i>mins</i></td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="id03" class="w3-container w3-card w3-white w3-round w3-margin"><br>
+      <h1>Sent Messages</h1>
+        <table class="w3-table w3-striped w3-white">
+          <tr>
+            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
+            <td>First Sent Message</td>
+            <td><i>mins</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
+            <td>Second Sent Message</td>
+            <td><i>mins</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
+            <td>Third Sent Message</td>
+            <td><i>mins</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
+            <td>Forth Sent Message</td>
+            <td><i>mins</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
+            <td>Fifth Sent Message</td>
+            <td><i>mins</i></td>
           </tr>
         </table>
       </div>
     </div>
-      
     
   <!-- End Grid -->
   </div>
@@ -94,3 +120,37 @@
     </div>
   </div>
 </div>
+
+<div id="id03" class="w3-modal" style="z-index:4">
+    <div class="w3-modal-content w3-animate-zoom">
+      <table class="w3-table w3-striped w3-white">
+          <tr>
+            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
+            <td>First Sent Message</td>
+            <td><i>mins</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
+            <td>Second Sent Message</td>
+            <td><i>mins</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
+            <td>Third Sent Message</td>
+            <td><i>mins</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
+            <td>Forth Sent Message</td>
+            <td><i>mins</i></td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
+            <td>Fifth Sent Message</td>
+            <td><i>mins</i></td>
+          </tr>
+        </table>
+    </div>
+  </div>
+  
+

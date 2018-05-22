@@ -8,7 +8,8 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "gitt": "ng build --prod --build-optimizer --base-href https://gageracer.github.io/QFM/ && ngh"
   },
   "private": true,
   "dependencies": {

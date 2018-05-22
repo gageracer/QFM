@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { ServiceWorkerModule } from '@angular/service-worker';
+// import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from './app.component';
 
 import { environment } from '../environments/environment';
@@ -58,8 +58,7 @@ export const routing = RouterModule.forRoot(appRoutes);
   imports: [
     BrowserModule,
     routing,
-    NgbModule.forRoot(),
-    environment.production ? ServiceWorkerModule.register('/ngsw.worker.js') : [],
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

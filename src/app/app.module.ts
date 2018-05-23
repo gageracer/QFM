@@ -24,6 +24,7 @@ import { FaqComponent } from './mainpage/faq/faq.component';
 import { MentorsComponent } from './mainpage/mentors/mentors.component';
 import { MenteesComponent } from './mainpage/mentees/mentees.component';
 import { RegisterComponent } from './register/register.component';
+import { FmenteesComponent } from './mainpage/fmentees/fmentees.component';
 
 
 const appRoutes: Routes = [
@@ -53,6 +54,7 @@ export const routing = RouterModule.forRoot(appRoutes);
     MentorsComponent,
     MenteesComponent,
     RegisterComponent,
+    FmenteesComponent,
   ],
 
   imports: [

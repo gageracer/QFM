@@ -27,13 +27,14 @@
   "dataGroups":[{
     "name": "api-freshness",
     "urls": [
-      "/main-page/messages"
+      "/main-page",
+      "/main-page/profile"
     ],
     "cacheConfig": {
       "maxSize": 100,
       "maxAge": "1h",
       "timeout": "10s",
-      "strategy": "freshness"
+      "strategy": "performance"
     }
   }]
 }

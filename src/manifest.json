@@ -4,13 +4,9 @@
   "description": "Mentoring Program",  
   "icons": [{
     "src": "assets/images/icons/mstile-150x150.png",
-      "sizes": "128x128",
+      "sizes": "150x150",
       "type": "image/png"
-    }, {
-      "src": "assets/images/icons/mstile-150x150.png",
-      "sizes": "152x152",
-      "type": "image/png"
-    }, {
+    },{
       "src": "assets/images/icons/android-chrome-256x256.png",
       "sizes": "256x256",
       "type": "image/png"

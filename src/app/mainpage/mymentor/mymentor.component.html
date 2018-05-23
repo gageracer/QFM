@@ -14,14 +14,14 @@
 
 					<img src="assets\images\suitavatar.jpg" style="height:300px;width:100%" alt="Avatar">
 					<div class="w3-display-topmiddle w3-container w3-text-black">
-						<h2>Sami ŞEN</h2>
+						<h2>Can Aygın</h2>
 					</div>
         </div>
         <div class="w3-container">
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Computer Engineer</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Izmir, TR</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>samisen@mail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>5337198177</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>canaygin@mail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>5338283956</p>
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
@@ -77,12 +77,6 @@
           <p>Computer Engineering</p>
           <hr>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Izmir American Collegiate Institute</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2006 - 2011</h6>
-          <p>Mathematics & Science</p>
-          <hr>
-        </div>
 
     <!-- End Right Column -->
 
@@ -96,12 +90,8 @@
 <div class="w3-third">
 
 	<div class="w3-container w3-card w3-white w3-margin-bottom">
-		<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-calendar fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Calendar</h2>
-		<div class="w3-container">
-			<h5 class="w3-opacity"><b> </b></h5>
-
-			<hr>
-		</div>
+      <a class="w3-button w3-red" onclick="document.getElementById('id02').style.display='block'">Send Message   <i class="fa fa-paper-plane"></i></a>
+		<a class="w3-button w3-red w3-right">Delete Mentor <i class="fa fa-remove"></i></a> 
 
 
 
@@ -116,13 +106,33 @@
 
 <div class="w3-container w3-card w3-white w3-margin-bottom">
 <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-check fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>To-Do List</h2>
-	<h5 class="w3-opacity"><b><input class="w3-check w3-margin-top" type="checkbox" checked="checked">Match with a Mentee</b></h5>
-	<h5 class="w3-opacity"><b><input class="w3-check w3-margin-top" type="checkbox" checked="checked">Send message to your mentee</b></h5>
-	<h5 class="w3-opacity"><b><input class="w3-check w3-margin-top" type="checkbox" checked="checked">Receive message from your mentee</b></h5>
+	<h5 class="w3-opacity"><b><input class="w3-check w3-margin-top" type="checkbox" checked="checked">Match with a Mentor</b></h5>
+	<h5 class="w3-opacity"><b><input class="w3-check w3-margin-top" type="checkbox" checked="checked">Send message to your Mentor</b></h5>
+	<h5 class="w3-opacity"><b><input class="w3-check w3-margin-top" type="checkbox" checked="checked">Receive message from your Mentor</b></h5>
 	<h5 class="w3-opacity"><b><input class="w3-check w3-margin-top" type="checkbox" checked="checked">Complete survey</b></h5>
 
+ 
 <!-- End Grid -->
 </div>
+<div id="id02" class="w3-modal" style="z-index:4">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-padding w3-red">
+         <h2>Send Mail</h2>
+      </div>
+      <div class="w3-panel">
+        <label>To</label>
+        <input class="w3-input w3-border w3-margin-bottom" type="text">
+        <label>Subject</label>
+        <input class="w3-input w3-border w3-margin-bottom" type="text">
+        <input class="w3-input w3-border w3-margin-bottom" style="height:150px" placeholder="What's on your mind?">
+        <div class="w3-section">
+          <a class="w3-button w3-red" onclick="document.getElementById('id02').style.display='none'">Cancel  <i class="fa fa-remove"></i></a>
+          <a class="w3-button w3-red w3-right" onclick="document.getElementById('id02').style.display='none'">Send  <i class="fa fa-paper-plane"></i></a> 
+        </div>    
+      </div>
+    </div>
+  </div>
+
 
 <!-- End Page Container -->
 </div>

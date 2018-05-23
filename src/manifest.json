@@ -3,25 +3,25 @@
   "short_name": "QFM",
   "description": "Mentoring Program",  
   "icons": [{
-    "src": "assets/images/icons/iconM.ico",
+    "src": "assets/images/icons/mstile-150x150.ico",
       "sizes": "128x128",
       "type": "image/png"
     }, {
-      "src": "assets/images/icons/iconL.ico",
+      "src": "assets/images/icons/mstile-150x150.png",
       "sizes": "152x152",
       "type": "image/png"
     }, {
-      "src": "assets/images/icons/iconXL.ico",
+      "src": "assets/images/icons/android-chrome-256x256.ico",
       "sizes": "256x256",
       "type": "image/png"
     }, {
-      "src": "assets/images/icons/iconXXL.ico",
-      "sizes": "512x512",
+      "src": "assets/images/icons/android-chrome-192x192.ico",
+      "sizes": "192x192",
       "type": "image/png"
     }],
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#66ccff",
+  "background_color": "transparent",
   "theme_color": "#66ccff"
 }
 

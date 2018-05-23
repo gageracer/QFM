@@ -16,10 +16,19 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
  <div class="w3-content w3-padding" style="max-width:1564px; margin-top: 100px">
  <form class="w3-container" action="/action_page.php">
   <div class="w3-section">
+      <b>Account Type</b>
+    <select>
+          <option value="Alumni Mentor">Alumni Mentor</option>
+          <option value="Senior Mentor">Senior Mentor</option>
+          <option value="Senior Mentee">Senior Mentee</option>
+          <option value="Senior Mentor&Mentee">Senior Mentor&Mentee</option>
+        </select>
+        <br>
+        <br>
       <label><b>Name</b></label>
       <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Name" name="name" required>
-    <label><b>Username</b></label>
-    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+    <label><b>Email</b></label>
+    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Email" name="email" required>
     <label><b>Password</b></label>
     <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="psw" required>
     <label><b>Re-Password</b></label>

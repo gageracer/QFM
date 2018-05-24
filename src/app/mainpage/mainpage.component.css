@@ -1,1 +1,6 @@
 @import "~font-awesome/css/font-awesome.css";
+
+
+div.profile, div.msg, div.pmaterials, div.survey, div.stats, div.mymentor, div.mymentees, div.match, div.faq, div.mentors, div.mentees, div.fmentees {
+    display: none;
+    }

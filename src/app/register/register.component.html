@@ -7,132 +7,547 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
 <!-- Navbar -->
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#"><img src="assets/images/icons/android-chrome-256x256.png" alt="icon" style="width:70px;height:60px;"/>QUEST FOR MENTOR</a>
-    
-  </nav>
+</nav>
 
- <div class="w3-content w3-padding" style="max-width:1564px; margin-top: 100px">
+<div class="w3-content w3-padding" style="max-width:1564px; margin-top: 100px">
 
-    <div class="col-md-8 order-md-1">
-        <form class="needs-validation" novalidate>
-            <b>Account Type</b>
-            <select>
-                  <option value="">Choose...</option>
-                  <option value="Alumni Mentor">Alumni Mentor</option>
-                  <option value="Senior Mentor">Senior Mentor</option>
-                  <option value="Senior Mentee">Senior Mentee</option>
-                  <option value="Senior Mentor&Mentee">Senior Mentor&Mentee</option>
-                </select>
-                <br>
-                <br>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <label for="firstName">First name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                Valid first name is required.
-              </div>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="lastName">Last name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-              <div class="invalid-feedback">
-                Valid last name is required.
-              </div>
-            </div>
-          </div>
-          <div class="mb-3">
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
-              <div class="invalid-feedback">
-                Please enter a valid email address.
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="firstName">Password</label>
-                <input type="text" class="form-control" id="password" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid password is required.
-                </div>
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="lastName">Re-Password</label>
-                <input type="text" class="form-control" id="repassword" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Valid password is required.
-                </div>
-              </div>
-            </div>
-            <div class="mb-3">
-                <label for="address">Address</label>
-                <input type="text" class="form-control" id="address" placeholder="" required>
-                <div class="invalid-feedback">
-                  Please enter your address.
-                </div>
-              </div>
-              
+<h2>Choose Account Type</h2>
 
-          <div class="row">
-            <div class="col-md-5 mb-3">
-              <label for="country">Country</label>
-              <select class="custom-select d-block w-100" id="country" required>
-                <option value="">Choose...</option>
-                <option>Turkey</option>
-              </select>
-              <div class="invalid-feedback">
-                Please select a valid country.
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <label for="state">City</label>
-              <select class="custom-select d-block w-100" id="state" required>
-                <option value="">Choose...</option>
-                <option>Istanbul</option>
-                <option>Izmir</option>
-              </select>
-              <div class="invalid-feedback">
-                Please provide a valid city.
-              </div>
-            </div>
-            <div class="col-md-3 mb-3">
-              <label for="zip">Phone</label>
-              <input type="text" class="form-control" id="phone" placeholder="" required>
-              <div class="invalid-feedback">
-                Phone number is code required.
-              </div>
-            </div>
-          </div>
-          <div class="mb-3">
-              <label for="address">Profession</label>
-              <input type="text" class="form-control" id="profession" placeholder="" required>
-              <div class="invalid-feedback">
-                Please enter your profession.
-              </div>
-            </div>
-            <div class="mb-3">
-                <label for="address">Education</label>
-                <input type="text" class="form-control" id="education" placeholder="" required>
-                <div class="invalid-feedback">
-                  Please enter your education.
+<ngb-tabset>
+  <ngb-tab title="Alumni Mentor">
+    <ng-template ngbTabContent>
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <div class="col-md-8 order-md-1">
+            <form class="needs-validation" novalidate>
+                
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="firstName">First name</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid first name is required.
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="lastName">Last name</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    Valid last name is required.
+                  </div>
                 </div>
               </div>
               <div class="mb-3">
-                  <label for="address">Skills</label>
-                  <input type="text" class="form-control" id="skills" placeholder="" required>
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="you@example.com">
                   <div class="invalid-feedback">
-                    Please enter your skills.
+                    Please enter a valid email address.
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="firstName">Password</label>
+                    <input type="text" class="form-control" id="password" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Valid password is required.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="lastName">Re-Password</label>
+                    <input type="text" class="form-control" id="repassword" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Valid password is required.
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="gender">Gender</label>
+                        <select class="custom-select d-block w-100" id="gender" required>
+                          <option value="">Choose...</option>
+                          <option>Male</option>
+                          <option>Female</option>
+                        </select>
+                        <div class="invalid-feedback">
+                        Gender is required.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="dateofbirth">Date of Birth</label>
+                      <input type="text" class="form-control" id="dateofbirth" placeholder="DD/MM/YYYY" value="" required>
+                      <div class="invalid-feedback">
+                        Please enter your birthday.
+                      </div>
+                    </div>
+                  </div>
+                  
+    
+              <div class="row">
+                <div class="col-md-5 mb-3">
+                  <label for="country">Country</label>
+                  <select class="custom-select d-block w-100" id="country" required>
+                    <option value="">Choose...</option>
+                    <option>Turkey</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid country.
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="state">City</label>
+                  <select class="custom-select d-block w-100" id="state" required>
+                    <option value="">Choose...</option>
+                    <option>Istanbul</option>
+                    <option>Izmir</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="zip">Phone</label>
+                  <input type="text" class="form-control" id="phone" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Phone number is required.
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                  <label for="workexperience">Work Experience</label>
+                  <input type="text" class="form-control" id="workexperience" placeholder="" required>
+                  <div class="invalid-feedback">
+                    Please enter your work experience.
                   </div>
                 </div>
                 <div class="mb-3">
-                    <label for="address">Languages</label>
-                    <input type="text" class="form-control" id="languages" placeholder="" required>
+                    <label for="industry">Industry</label>
+                    <input type="text" class="form-control" id="industry" placeholder="" required>
                     <div class="invalid-feedback">
-                      Please enter known languages.
+                      Please the industry you work in.
                     </div>
                   </div>
-          
-          <hr class="mb-4">
-          <a [routerLink]="['/main-page']"><button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Register</button></a>
-        </form>
+                  <div class="mb-3">
+                      <label for="skills">Skills</label>
+                      <input type="text" class="form-control" id="skills" placeholder="" required>
+                      <div class="invalid-feedback">
+                        Please enter your skills.
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="education">Education</label>
+                        <input type="text" class="form-control" id="education" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Please enter your education.
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                          <label for="currentposition">Current Position</label>
+                          <input type="text" class="form-control" id="currentposition" placeholder="" required>
+                          <div class="invalid-feedback">
+                            Please enter your current position.
+                          </div>
+                        </div>
+                        
+              
+              <hr class="mb-4">
+              <a [routerLink]="['/main-page']"><button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Register</button></a>
+            </form>
+          </div>
+              
       </div>
+    </ng-template>
+  </ngb-tab>
+
+
+
+
+
+
+  <ngb-tab title="Senior Mentor">
+    <ng-template ngbTabContent>
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <div class="col-md-8 order-md-1">
+            <form class="needs-validation" novalidate>
+                
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Valid first name is required.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="lastName">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Valid last name is required.
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">
+                      Please enter a valid email address.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="firstName">Password</label>
+                      <input type="text" class="form-control" id="password" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        Valid password is required.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="lastName">Re-Password</label>
+                      <input type="text" class="form-control" id="repassword" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        Valid password is required.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6 mb-3">
+                          <label for="gender">Gender</label>
+                          <select class="custom-select d-block w-100" id="gender" required>
+                            <option value="">Choose...</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                          <div class="invalid-feedback">
+                          Gender is required.
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="dateofbirth">Date of Birth</label>
+                        <input type="text" class="form-control" id="dateofbirth" placeholder="DD/MM/YYYY" value="" required>
+                        <div class="invalid-feedback">
+                          Please enter your birthday.
+                        </div>
+                      </div>
+                    </div>
+                    
+      
+                <div class="row">
+                  <div class="col-md-5 mb-3">
+                    <label for="country">Country</label>
+                    <select class="custom-select d-block w-100" id="country" required>
+                      <option value="">Choose...</option>
+                      <option>Turkey</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid country.
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="state">City</label>
+                    <select class="custom-select d-block w-100" id="state" required>
+                      <option value="">Choose...</option>
+                      <option>Istanbul</option>
+                      <option>Izmir</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="zip">Phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Phone number is required.
+                    </div>
+                  </div>
+                </div>
+                  <div class="mb-3">
+                      <label for="department">Department</label>
+                      <input type="text" class="form-control" id="department" placeholder="" required>
+                      <div class="invalid-feedback">
+                        Please enter your department.
+                      </div>
+                    </div>
+                                     
+                                            
+                <hr class="mb-4">
+                <a [routerLink]="['/main-page']"><button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Register</button></a>
+              </form>
+          </div>
+                
+      </div>
+    </ng-template>
+  </ngb-tab>
+
+
+
+
+
+
+
+  <ngb-tab title="Senior Mentee">
+    <ng-template ngbTabContent>
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <div class="col-md-8 order-md-1">
+            <form class="needs-validation" novalidate>
+                
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Valid first name is required.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="lastName">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Valid last name is required.
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">
+                      Please enter a valid email address.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="firstName">Password</label>
+                      <input type="text" class="form-control" id="password" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        Valid password is required.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="lastName">Re-Password</label>
+                      <input type="text" class="form-control" id="repassword" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        Valid password is required.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6 mb-3">
+                          <label for="gender">Gender</label>
+                          <select class="custom-select d-block w-100" id="gender" required>
+                            <option value="">Choose...</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                          <div class="invalid-feedback">
+                          Gender is required.
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="dateofbirth">Date of Birth</label>
+                        <input type="text" class="form-control" id="dateofbirth" placeholder="DD/MM/YYYY" value="" required>
+                        <div class="invalid-feedback">
+                          Please enter your birthday.
+                        </div>
+                      </div>
+                    </div>
+                    
+      
+                <div class="row">
+                  <div class="col-md-5 mb-3">
+                    <label for="country">Country</label>
+                    <select class="custom-select d-block w-100" id="country" required>
+                      <option value="">Choose...</option>
+                      <option>Turkey</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid country.
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="state">City</label>
+                    <select class="custom-select d-block w-100" id="state" required>
+                      <option value="">Choose...</option>
+                      <option>Istanbul</option>
+                      <option>Izmir</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="zip">Phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Phone number is required.
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                    <label for="major">Major</label>
+                    <input type="text" class="form-control" id="major" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Please enter your major.
+                    </div>
+                  </div>
+                    <div class="mb-3">
+                        <label for="skills">Skills</label>
+                        <input type="text" class="form-control" id="skills" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Please enter your skills.
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                          <label for="careerinterest">Career Interest</label>
+                          <input type="text" class="form-control" id="careerinterest" placeholder="" required>
+                          <div class="invalid-feedback">
+                            Please enter Career Interest.
+                          </div>
+                        </div>
+                                                 
+                
+                <hr class="mb-4">
+                <a [routerLink]="['/main-page']"><button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Register</button></a>
+              </form>
+          </div>
+                  
+      </div>
+    </ng-template>
+  </ngb-tab>
+
+
+
+  <ngb-tab title="Senior Mentor&Mentee">
+    <ng-template ngbTabContent>
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <div class="col-md-8 order-md-1">
+            <form class="needs-validation" novalidate>
+                
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="firstName">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Valid first name is required.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="lastName">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                      Valid last name is required.
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                    <div class="invalid-feedback">
+                      Please enter a valid email address.
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="firstName">Password</label>
+                      <input type="text" class="form-control" id="password" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        Valid password is required.
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="lastName">Re-Password</label>
+                      <input type="text" class="form-control" id="repassword" placeholder="" value="" required>
+                      <div class="invalid-feedback">
+                        Valid password is required.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-6 mb-3">
+                          <label for="gender">Gender</label>
+                          <select class="custom-select d-block w-100" id="gender" required>
+                            <option value="">Choose...</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                          <div class="invalid-feedback">
+                          Gender is required.
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="dateofbirth">Date of Birth</label>
+                        <input type="text" class="form-control" id="dateofbirth" placeholder="DD/MM/YYYY" value="" required>
+                        <div class="invalid-feedback">
+                          Please enter your birthday.
+                        </div>
+                      </div>
+                    </div>
+                    
+      
+                <div class="row">
+                  <div class="col-md-5 mb-3">
+                    <label for="country">Country</label>
+                    <select class="custom-select d-block w-100" id="country" required>
+                      <option value="">Choose...</option>
+                      <option>Turkey</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid country.
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="state">City</label>
+                    <select class="custom-select d-block w-100" id="state" required>
+                      <option value="">Choose...</option>
+                      <option>Istanbul</option>
+                      <option>Izmir</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="zip">Phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Phone number is required.
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-3">
+                    <label for="major">Major</label>
+                    <input type="text" class="form-control" id="major" placeholder="" required>
+                    <div class="invalid-feedback">
+                      Please enter your major.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                      <label for="department">Department</label>
+                      <input type="text" class="form-control" id="department" placeholder="" required>
+                      <div class="invalid-feedback">
+                        Please enter your department.
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="skills">Skills</label>
+                        <input type="text" class="form-control" id="skills" placeholder="" required>
+                        <div class="invalid-feedback">
+                          Please enter your skills.
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                          <label for="careerinterest">Career Interest</label>
+                          <input type="text" class="form-control" id="careerinterest" placeholder="" required>
+                          <div class="invalid-feedback">
+                            Please enter Career Interest.
+                          </div>
+                        </div>
+                                                 
+                
+                <hr class="mb-4">
+                <a [routerLink]="['/main-page']"><button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Register</button></a>
+              </form>
+          </div>
+            
+      </div>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>    
 </div>

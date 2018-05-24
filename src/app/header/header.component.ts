@@ -10,11 +10,13 @@ import {NgbDropdownConfig} from '@ng-bootstrap/ng-bootstrap';
 export class HeaderComponent implements OnInit {
   isNavbarCollapsed = false;
   isChangePassCollapsed = true;
+
   constructor(config: NgbDropdownConfig) {
     config.autoClose = false;
    }
 
   ngOnInit() {
   }
+
 
 }

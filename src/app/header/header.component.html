@@ -39,7 +39,8 @@
                         <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="npsw" required>
                         <label><b>Re-New Password</b></label>
                         <input class="w3-input w3-border" type="text" placeholder="Enter Password" name="rnpsw" required>
-                        <a><button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Done</button></a>
+                        <a (click)="isChangePassCollapsed = !isChangePassCollapsed"
+                        [attr.aria-expanded]="!isChangePassCollapsed" aria-controls="isChangePassCollapsedExample"><button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Done</button></a>
                     </div>
                   </div>
                 </div>         

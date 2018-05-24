@@ -25,7 +25,7 @@ import { MentorsComponent } from './mainpage/mentors/mentors.component';
 import { MenteesComponent } from './mainpage/mentees/mentees.component';
 import { RegisterComponent } from './register/register.component';
 import { FmenteesComponent } from './mainpage/fmentees/fmentees.component';
-import { FindmentorComponent } from './mainpage/findmentor/findmentor.component';
+
 
 
 const appRoutes: Routes = [
@@ -56,7 +56,6 @@ export const routing = RouterModule.forRoot(appRoutes);
     MenteesComponent,
     RegisterComponent,
     FmenteesComponent,
-    FindmentorComponent,
   ],
 
   imports: [

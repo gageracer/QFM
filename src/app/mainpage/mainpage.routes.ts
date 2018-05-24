@@ -15,6 +15,10 @@ import { MenteesComponent } from './mentees/mentees.component';
 import { FmenteesComponent} from './fmentees/fmentees.component';
 import { ManagerComponent } from './manager/manager.component';
 import { HeaderComponent } from '../header/header.component';
+import { AlumniComponent } from './alumni/alumni.component';
+import { SmentorComponent } from './smentor/smentor.component';
+import { SmenteeComponent } from './smentee/smentee.component';
+import { SmentoreeComponent } from './smentoree/smentoree.component';
 
 export const MAN_ROUTES: Routes = [
     {path: '', component: ManagerComponent},
@@ -30,7 +34,7 @@ export const MAN_ROUTES: Routes = [
 ];
 
 export const ALUMNI_ROUTES: Routes = [
-    {path: '', component: ManagerComponent},
+    {path: '', component: AlumniComponent},
     {path: 'profile',     component: ProfileComponent},
     {path: 'messages',    component: MessagesComponent},
     {path: 'materials',   component: MaterialsComponent},
@@ -39,7 +43,7 @@ export const ALUMNI_ROUTES: Routes = [
     {path: 'faq',         component: FaqComponent}
 ];
 export const SMENTOR_ROUTES: Routes = [
-    {path: '', component: ManagerComponent},
+    {path: '', component: SmentorComponent},
     {path: 'profile',     component: ProfileComponent},
     {path: 'messages',    component: MessagesComponent},
     {path: 'materials',   component: MaterialsComponent},
@@ -48,7 +52,7 @@ export const SMENTOR_ROUTES: Routes = [
     {path: 'faq',         component: FaqComponent}
 ];
 export const SMENTEE_ROUTES: Routes = [
-    {path: '', component: ManagerComponent},
+    {path: '', component: SmenteeComponent},
     {path: 'profile',     component: ProfileComponent},
     {path: 'messages',    component: MessagesComponent},
     {path: 'materials',   component: MaterialsComponent},
@@ -57,7 +61,7 @@ export const SMENTEE_ROUTES: Routes = [
     {path: 'faq',         component: FaqComponent}
 ];
 export const SMENTOREE_ROUTES: Routes = [
-    {path: '', component: ManagerComponent},
+    {path: '', component: SmentoreeComponent},
     {path: 'profile',     component: ProfileComponent},
     {path: 'messages',    component: MessagesComponent},
     {path: 'materials',   component: MaterialsComponent},

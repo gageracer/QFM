@@ -7,17 +7,19 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
+
 export class RegisterComponent implements OnInit {
   myForm: FormGroup;
+
   onSubmit() {
     console.log(this.myForm);
     this.myForm.reset();
-  }
+}
   constructor() { }
 
   ngOnInit() {
     this.myForm = new FormGroup({
-
+      firstName: new FormControl(null, Validators.required)
     });
   }
 

@@ -18,17 +18,22 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
     <ng-template ngbTabContent>
       <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
         <div class="col-md-8 order-md-1">
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" novalidate [formGroup]="myForm" (ngSubmit)="onSubmit()" >
                 
               <div class="row">
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3 form-group">
                   <label for="firstName">First name</label>
-                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                  <input 
+                      type="text" 
+                      class="form-control"
+                      id="firstName" 
+                      formControlName="firstName" 
+                 >
                   <div class="invalid-feedback">
                     Valid first name is required.
                   </div>
                 </div>
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3 form-group">
                   <label for="lastName">Last name</label>
                   <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
                   <div class="invalid-feedback">
@@ -46,14 +51,14 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
               <div class="row">
                   <div class="col-md-6 mb-3">
                     <label for="firstName">Password</label>
-                    <input type="text" class="form-control" id="password" placeholder="" value="" required>
+                    <input type="password" class="form-control" id="password" placeholder="" value="" required>
                     <div class="invalid-feedback">
                       Valid password is required.
                     </div>
                   </div>
                   <div class="col-md-6 mb-3">
                     <label for="lastName">Re-Password</label>
-                    <input type="text" class="form-control" id="repassword" placeholder="" value="" required>
+                    <input type="password" class="form-control" id="repassword" placeholder="" value="" required>
                     <div class="invalid-feedback">
                       Valid password is required.
                     </div>
@@ -149,7 +154,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
                         
               
               <hr class="mb-4">
-              <a [routerLink]="['/main-page']"><button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Register</button></a>
+              <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit" ><a [routerLink]="['/main-page']">Register</a></button>
             </form>
           </div>
               

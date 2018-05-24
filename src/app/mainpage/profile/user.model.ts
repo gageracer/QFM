@@ -34,7 +34,7 @@ export class User {
 
 
     // tslint:disable-next-line:max-line-length
-    constructor(name: string, lastName: string, userType: usertype, password: string, email: string, mobilePhone?: string, gender?: string, birthday?: string ) {
+    constructor(name: string, lastName?: string, userType?: usertype, password?: string, email?: string, mobilePhone?: string, gender?: string, birthday?: string ) {
         this.generalInfo.firstName = name;
         this.generalInfo.lastName = lastName;
         this.generalInfo.userType = userType;

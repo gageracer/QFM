@@ -16,7 +16,6 @@ import { FmenteesComponent} from './fmentees/fmentees.component';
 
 
 
-
 export const MP_ROUTES: Routes = [
     {path: '', component: MainpageComponent},
     {path: 'profile',     component: ProfileComponent},

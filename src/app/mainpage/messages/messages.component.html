@@ -34,63 +34,103 @@
     
       <div id="id02" class="w3-container w3-card w3-white w3-round w3-margin"><br>
       <h1>Messages</h1>
-        <table class="w3-table w3-striped w3-white">
+      <table class="w3-table w3-striped w3-white">
           <tr>
-            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>First Message</td>
-            <td><i>mins</i></td>
+              <a class="w3-button w3-block w3-left-align"(click)="isMessageCollapsed1 = !isMessageCollapsed1"
+              [attr.aria-expanded]="!isMessageCollapsed1" aria-controls="isMessageCollapsed1Example"><td style="width:300px"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Subject</td>
+              <td style="width:300px">Sent from</td>
+              <td style="width:200px">Date</td>
+            </a>
+              <div id="isMessageCollapsed1" [ngbCollapse]="isMessageCollapsed1">
+                  <div class="card">
+                    <div class="card-body">
+                        <h1>Message1</h1>
+                    </div>
+                  </div>
+                </div>
           </tr>
+
           <tr>
-            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>Second Message</td>
-            <td><i>mins</i></td>
+            <a class="w3-button w3-block w3-left-align"(click)="isMessageCollapsed2 = !isMessageCollapsed2"
+            [attr.aria-expanded]="!isMessageCollapsed2" aria-controls="isMessageCollapsed2Example"><td style="width:300px"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Subject</td>
+            <td style="width:300px">Sent from</td>
+            <td style="width:200px">Date</td>
+          </a>
+
+            <div id="isMessageCollapsed2Example" [ngbCollapse]="isMessageCollapsed2">
+                <div class="card">
+                  <div class="card-body">
+                      <h1>Message2</h1>
+                  </div>
+                </div>
+              </div>
           </tr>
+
           <tr>
-            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>Third Message</td>
-            <td><i>mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>Forth Message</td>
-            <td><i>mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>Fifth Message</td>
-            <td><i>mins</i></td>
-          </tr>
-        </table>
+              <a class="w3-button w3-block w3-left-align"(click)="isMessageCollapsed3 = !isMessageCollapsed3"
+              [attr.aria-expanded]="!isMessageCollapsed3" aria-controls="isMessageCollapsed3Example"><td style="width:300px"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Subject</td>
+              <td style="width:300px">Sent from</td>
+              <td style="width:200px">Date</td>
+            </a>
+            <div id="isMessageCollapsed3Example" [ngbCollapse]="isMessageCollapsed3">
+                  <div class="card">
+                    <div class="card-body">
+                        <h1>Message3</h1>
+                    </div>
+                  </div>
+                </div>
+            </tr>
+      </table>
       </div>
 
       <div id="id03" class="w3-container w3-card w3-white w3-round w3-margin"><br>
       <h1>Sent Messages</h1>
         <table class="w3-table w3-striped w3-white">
-          <tr>
-            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>First Sent Message</td>
-            <td><i>mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>Second Sent Message</td>
-            <td><i>mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>Third Sent Message</td>
-            <td><i>mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>Forth Sent Message</td>
-            <td><i>mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>Fifth Sent Message</td>
-            <td><i>mins</i></td>
-          </tr>
+            <tr>
+                <a class="w3-button w3-block w3-left-align"(click)="isSMessageCollapsed1 = !isSMessageCollapsed1"
+                [attr.aria-expanded]="!isSMessageCollapsed1" aria-controls="isSMessageCollapsed1Example"><td style="width:300px"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Subject</td>
+                <td style="width:300px">Sent to</td>
+                <td style="width:200px">Date</td>
+              </a>
+                <div id="isSMessageCollapsed1" [ngbCollapse]="isSMessageCollapsed1">
+                    <div class="card">
+                      <div class="card-body">
+                          <h1>Message1</h1>
+                      </div>
+                    </div>
+                  </div>
+            </tr>
+
+            <tr>
+              <a class="w3-button w3-block w3-left-align"(click)="isSMessageCollapsed2 = !isSMessageCollapsed2"
+              [attr.aria-expanded]="!isSMessageCollapsed2" aria-controls="isSMessageCollapsed2Example"><td style="width:300px"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Subject</td>
+              <td style="width:300px">Sent to</td>
+              <td style="width:200px">Date</td>
+            </a>
+
+              <div id="isSMessageCollapsed2Example" [ngbCollapse]="isSMessageCollapsed2">
+                  <div class="card">
+                    <div class="card-body">
+                        <h1>Message2</h1>
+                    </div>
+                  </div>
+                </div>
+            </tr>
+
+            <tr>
+                <a class="w3-button w3-block w3-left-align"(click)="isSMessageCollapsed3 = !isSMessageCollapsed3"
+                [attr.aria-expanded]="!isSMessageCollapsed3" aria-controls="isSMessageCollapsed3Example"><td style="width:300px"><i class="fa fa-chevron-down fa-fw w3-margin-right"></i> Subject</td>
+                <td style="width:300px">Sent to</td>
+                <td style="width:200px">Date</td>
+              </a>
+              <div id="isSMessageCollapsed3Example" [ngbCollapse]="isSMessageCollapsed3">
+                    <div class="card">
+                      <div class="card-body">
+                          <h1>Message3</h1>
+                      </div>
+                    </div>
+                  </div>
+              </tr>
         </table>
       </div>
     </div>
@@ -121,36 +161,5 @@
   </div>
 </div>
 
-<div id="id03" class="w3-modal" style="z-index:4">
-    <div class="w3-modal-content w3-animate-zoom">
-      <table class="w3-table w3-striped w3-white">
-          <tr>
-            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>First Sent Message</td>
-            <td><i>mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>Second Sent Message</td>
-            <td><i>mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>Third Sent Message</td>
-            <td><i>mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>Forth Sent Message</td>
-            <td><i>mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-angle-down w3-text-blue w3-large"></i></td>
-            <td>Fifth Sent Message</td>
-            <td><i>mins</i></td>
-          </tr>
-        </table>
-    </div>
-  </div>
-  
+
 

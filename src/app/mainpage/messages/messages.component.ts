@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessagesComponent implements OnInit {
 
+  isMessageCollapsed1 = true;
+  isMessageCollapsed2 = true;
+  isMessageCollapsed3 = true;
+  isSMessageCollapsed1 = true;
+  isSMessageCollapsed2 = true;
+  isSMessageCollapsed3 = true;
+
   constructor() { }
 
   ngOnInit() {

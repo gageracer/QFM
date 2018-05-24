@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from './profile/user.model';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-mainpage',
@@ -7,9 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainpageComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

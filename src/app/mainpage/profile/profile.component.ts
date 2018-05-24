@@ -21,13 +21,13 @@ export class ProfileComponent implements OnInit {
     this.parent = String(window.location.pathname);
   }
 
-  if (parent = '/QFM/manager') {
+/*   if (parent = '/QFM/manager') {
     this.Puser = this.Manager;
     }
-  else (parent = '/QFM/alumni') {
+  if (parent = '/QFM/alumni') {
       this.Puser = this.Alumni;
     }
-   (parent = '/QFM/smentee') {
+  if (parent = '/QFM/smentee') {
       this.Puser = this.Smentee;
     }
   if (parent = '/QFM/smentor') {
@@ -35,6 +35,6 @@ export class ProfileComponent implements OnInit {
     }
   if (parent = '/QFM/smentoree') {
       this.Puser = this.Smentoree;
-    }
+    } */
 
 }

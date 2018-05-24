@@ -1,38 +1,48 @@
 export class User {
 
-    public userType: usertype;
-    public userID: string;
-    private password: string;
-    public notificationToogle: boolean;
-    public mobilePhone: string;
-    public lastName: string;
-    public gender: string;
-    public firstName: string;
-    public email: string;
-    public birthday: string;
-    public photoPath: string;
+    generalInfo: {
+        userType: usertype,
+        userID: string,
+        password: string,
+        notificationToogle: boolean,
+        mobilePhone: string,
+        lastName: string,
+        gender: string,
+        firstName: string,
+        email: string,
+        birthday: string,
+        photoPath: string
+    };
 
-    public seniorMajor: string;
-    public seniorDepartment: string;
-    public seniorCareerInterest: string;
-    public featuredSkills: string;
+    public seniorInfo: {
+        seniorMajor: string,
+        seniorDepartment: string,
+        seniorCareerInterest: string,
+        featuredSkills: string
+    };
 
     public isMatched: boolean;
     public isApproved: boolean;
 
-    public alumniWorkExperience: string;
-    public alumniIndustry: string;
-    public alumniEducation: string;
-    public alumniCurrentPosition: string;
-    public alumniCountryIn: string;
+    public alumniInfo: {
+        alumniWorkExperience: string,
+        alumniIndustry: string,
+        alumniEducation: string,
+        alumniCurrentPosition: string,
+        alumniCountryIn: string
+    };
 
 
-    constructor(name: string, lastName: string, userType: usertype, password: string, email: string, ) {
-        this.firstName = name;
-        this.lastName = lastName;
-        this.userType = userType;
-        this.password = password;
-        this.email = email;
+    // tslint:disable-next-line:max-line-length
+    constructor(name: string, lastName: string, userType: usertype, password: string, email: string, mobilePhone?: string, gender?: string, birthday?: string ) {
+        this.generalInfo.firstName = name;
+        this.generalInfo.lastName = lastName;
+        this.generalInfo.userType = userType;
+        this.generalInfo.password = password;
+        this.generalInfo.email = email;
+        this.generalInfo.birthday = birthday;
+        this.generalInfo.gender = gender;
+        this.generalInfo.mobilePhone = mobilePhone;
     }
 }
 

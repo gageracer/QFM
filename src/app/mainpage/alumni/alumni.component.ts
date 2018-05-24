@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../profile/user.model';
 
 @Component({
   selector: 'app-alumni',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlumniComponent implements OnInit {
 
+  
   constructor() { }
 
   ngOnInit() {

@@ -46,7 +46,7 @@ export class User {
     }
 }
 
-enum usertype {
+export enum usertype {
     Admin = 0,
     Manager = 1,
     Alumni_Mentor = 2,

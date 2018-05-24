@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../profile/user.model';
 
 @Component({
   selector: 'app-smentor',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SmentorComponent implements OnInit {
 
+  
   constructor() { }
 
   ngOnInit() {

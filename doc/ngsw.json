@@ -1,0 +1,89 @@
+{
+  "configVersion": 1,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/inline.318b50c57b4eba3d437b.bundle.js",
+        "/main.081863a9dbe89e48b629.bundle.js",
+        "/polyfills.18ca564e235cea948661.bundle.js",
+        "/styles.2f887b07130c79bab63c.bundle.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/images/hero6.jpg",
+        "/assets/images/mentorlogo.png",
+        "/assets/images/suitavatar.jpg",
+        "/assets/images/icons/120x.png",
+        "/assets/images/icons/144x.png",
+        "/assets/images/icons/152x.png",
+        "/assets/images/icons/180x.png",
+        "/assets/images/icons/48x.png",
+        "/assets/images/icons/72x.png",
+        "/assets/images/icons/76x.png",
+        "/assets/images/icons/96x.png",
+        "/assets/images/icons/android-chrome-192x192.png",
+        "/assets/images/icons/android-chrome-256x256.png",
+        "/assets/images/icons/android-chrome-512x512.png",
+        "/assets/images/icons/apple-touch-icon.png",
+        "/assets/images/icons/favicon-16x16.png",
+        "/assets/images/icons/favicon-32x32.png",
+        "/assets/images/icons/favicon_zpi_icon.ico",
+        "/assets/images/icons/mstile-150x150.png",
+        "/assets/images/icons/safari-pinned-tab.svg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-save",
+      "patterns": [
+        "\\/main-page",
+        "\\/main-page\\/profile"
+      ],
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": 3600000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
+    "/assets/images/hero6.jpg": "04215fc17f8941ffb3c4ce8eed5aaedc87762817",
+    "/main.081863a9dbe89e48b629.bundle.js": "d82f93e934bb3b20780ff9eb64e946946f02cf63",
+    "/assets/images/mentorlogo.png": "42acb1b6ed3e8162e5a05c2e5429103769ce461e",
+    "/polyfills.18ca564e235cea948661.bundle.js": "b092f5c27ff4222179ae3e9e3164c8cc6caa09cf",
+    "/assets/images/suitavatar.jpg": "6433dc269fc4736f309e22be1bae5a4fcaad6476",
+    "/styles.2f887b07130c79bab63c.bundle.css": "b3fa358bacadbaf950ad6f77bd304f5299967c94",
+    "/assets/images/icons/120x.png": "97903ae255e13d46081bbed07758e74cc03a30e5",
+    "/favicon.ico": "f91de0df6a62d023527b99a1497560ca4aec98a7",
+    "/assets/images/icons/144x.png": "8f2e8677085c9814bb5756a5858774ea8121c975",
+    "/index.html": "a3fe633636216ec5eaa2923b0bbe9f90f79c9538",
+    "/assets/images/icons/152x.png": "80b14f75f3b8e098e90782976f14e05d30bf3e11",
+    "/assets/images/icons/180x.png": "d866a2c418f1bf21bf9b1152951769d6fc08cfbc",
+    "/assets/images/icons/48x.png": "50f32ff7df5bb32a24163272bdde0444bf8c1625",
+    "/assets/images/icons/72x.png": "c65146bfd22eadd69767d1134d2a7ec63ce92f13",
+    "/assets/images/icons/76x.png": "8143788afd96b357bc1c5385849f58938e40e932",
+    "/assets/images/icons/96x.png": "6564aeb978a541253f7bf743a35fb7c03759d9d8",
+    "/assets/images/icons/android-chrome-192x192.png": "84efc6b4a1b86796bc9a8bb02c6961a317cb9f2c",
+    "/assets/images/icons/android-chrome-256x256.png": "91b1ff03c60f0742df4b981b0e5c8233b5c48283",
+    "/assets/images/icons/android-chrome-512x512.png": "f2700e1895d749c5384ce11d6257de441b29222f",
+    "/assets/images/icons/apple-touch-icon.png": "e99cd42596398af103d4090f68aa903874a9a48c",
+    "/assets/images/icons/favicon-16x16.png": "91e7209d1a79c98035647ab1069ac692ec0ecc19",
+    "/assets/images/icons/favicon-32x32.png": "ae182568b008cbe70000384412cb0c4b6616df01",
+    "/assets/images/icons/favicon_zpi_icon.ico": "e356a2047ea9975fbcf0da2bf6da2683431f1a12",
+    "/assets/images/icons/mstile-150x150.png": "8c6694ac042c8c35842bd63e7646be8f8fdabf50",
+    "/assets/images/icons/safari-pinned-tab.svg": "7c34e639c90c23cff89bb36d9d06d81649ec8096"
+  }
+}
